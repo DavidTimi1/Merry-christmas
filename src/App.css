@@ -1,0 +1,9 @@
+:root {
+  --background: #123a84;
+
+  background-color: var(--background);
+}
+
+#root {
+  overflow: hidden;
+}

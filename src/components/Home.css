@@ -1,0 +1,27 @@
+.santa-blur {
+    backdrop-filter: blur(3px);
+    background-color: transparent;
+    bottom: -10px;
+    height: 20px;
+    left: 0;
+}
+
+/* .gift-box {
+    animation: animateGift 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards ;
+    transform-origin: center;
+}
+
+@keyframes animateGift {
+    0% {
+        scale: .5;
+    }
+    80% {
+        scale: .8;
+    }
+    100% {
+        scale: 1.2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+} */

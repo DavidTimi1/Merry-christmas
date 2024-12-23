@@ -1,0 +1,14 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" version="1.0">
+ <metadata>Created by potrace 1.10, written by Peter Selinger 2001-2011</metadata>
+ <defs>
+  <linearGradient y2="0.00861" x2="0.00781" y1="1" x1="0" id="svg_7">
+   <stop offset="0" stop-color="#4c4c4c"/>
+   <stop offset="0.33203" stop-color="#b3b3b3"/>
+  </linearGradient>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#000000" fill="url(#svg_7)" d="m-0.50005,310.36008c69.28336,-33.20407 140.21838,4.10779 248.63472,31.68389c124.45424,13.54039 266.99608,-33.37162 294.0405,-5.68064l59.1782,-13.67489l1.11908,29.98807l-602.97335,-0.73081l0.00084,-41.58562l0.00001,0.00001z" id="svg_2" stroke-opacity="0"/>
+  <path stroke="#000000" fill="#fcfcff" d="m-0.50005,313.12413c69.28336,-32.60454 140.21838,4.03362 248.63472,31.11182c124.45424,13.2959 266.99608,-32.76908 294.0405,-5.57808l59.1782,-13.42798l-0.88092,71.44662l-603.97335,2.28238l3.00084,-85.83477l0.00001,0.00001z" id="svg_4" stroke-opacity="0"/>
+ </g>
+</svg>
