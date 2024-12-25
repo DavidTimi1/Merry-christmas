@@ -15,18 +15,17 @@
     background-color: #222222bb;
 }
 
+footer {
+    color: #222;
+    bottom: 10px;
+    font-weight: 400;
+    text-wrap-mode: nowrap;
+    letter-spacing: 1px;
+    text-shadow: 7px 5px 10px #111;
+}
+
 
 .floor {
-    color: #222;
-
-    footer {
-        bottom: 10px;
-        font-weight: 400;
-        text-wrap-mode: nowrap;
-        letter-spacing: 1px;
-        text-shadow: 7px 5px 10px #111;
-    }
-
     .trees {
         bottom: 0;
     }
