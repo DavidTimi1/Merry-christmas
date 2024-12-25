@@ -25,11 +25,11 @@ export const ScrollModal = () => {
                     </h3>
                     <p className='grow'>
                         <span>
-                            
+                            { txt }
                         </span>
                     </p>
                     <div className='flex verse' style={{justifyContent: "flex-end"}}>
-                        1 Thessalonians 5 : 18
+                        { loc }
                     </div>
                 </div>
             </div>
