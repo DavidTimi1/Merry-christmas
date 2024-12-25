@@ -1,27 +1,124 @@
-.santa-blur {
-    backdrop-filter: blur(3px);
-    background-color: transparent;
-    bottom: -10px;
-    height: 20px;
-    left: 0;
-}
 
-/* .gift-box {
-    animation: animateGift 3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards ;
-    transform-origin: center;
-}
+.santa {
+    animation: sleighing both 8s ease-in-out infinite;
 
-@keyframes animateGift {
-    0% {
-        scale: .5;
+    > * {
+        scale: -1 1;
     }
-    80% {
-        scale: .8;
+}
+
+.gift-box .hide {
+    animation: none !important;
+}
+
+.overlay:has( .gift-box:not(.hide), #open-box){
+    background-color: #222222bb;
+}
+
+
+.floor {
+    color: #222;
+
+    footer {
+        bottom: 10px;
+        font-weight: 400;
+        text-wrap-mode: nowrap;
+        letter-spacing: 1px;
+        text-shadow: 7px 5px 10px #111;
+    }
+
+    .trees {
+        bottom: 0;
+    }
+
+    .tree2, .tree4 {
+        transform: translateY(-20px);
+    }
+
+    .tree1, .tree3 {
+        transform: translateY(-50px);
+    }
+}
+
+.scroll-view {
+    background-color: transparent;
+    padding: 0;
+    width: min(700px, 100%);
+    outline: none;
+    border: none;
+
+    &::backdrop {
+        background-color: #22222240;
+        backdrop-filter: blur(5px);
+    }
+
+    .content {
+        aspect-ratio: inherit;
+        color: black;
+        top: calc(100% * (40 / 277));
+        left: calc(100% * (100 / 466));
+        overflow: hidden;
+        padding: 10px;
+        width: calc(100% * (260 / 466));
+
+        p {
+            overflow-y: auto;
+        }
+
+        :not(p) {
+            flex: 0 0 auto;
+        }
+
+        .verse {
+            font-size: smaller;
+        }
+    }
+
+    h3, p {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .tree2, .tree3 {
+        visibility: hidden;
+    }
+
+    .scroll-view {
+        h3 {
+            line-height: 26px;
+        }
+        p { 
+            font-size: smaller;
+            line-height: 15px;
+        }
+        
+        .verse {
+            line-height: 18px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .floor .tree1, .floor .tree2 {
+        transform: translateY(-70px);
+    }
+}
+
+
+@keyframes sleighing {
+    0% {
+        transform: translate(-100%, 30px);
+        rotate: 20deg;
+    }
+    50% {
+        transform: translate(calc((100vw - 100%) / 2 ), 30px);
+        rotate: 0deg;
     }
     100% {
-        scale: 1.2;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(200vw, 20px);
+        rotate: -30deg;
     }
-} */
+}

@@ -1,6 +1,7 @@
 import './App.css'
 import './palette.css'
 import Home from './components/Home'
+import { daysSinceLastChristmas } from './components/More'
 
 function App() {
 
@@ -8,5 +9,8 @@ function App() {
 		<Home />
 	)
 }
+
+
+export const christmasDay = daysSinceLastChristmas();
 
 export default App

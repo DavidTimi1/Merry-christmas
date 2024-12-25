@@ -1,9 +1,34 @@
 :root {
   --background: #123a84;
 
-  background-color: var(--background);
+  background: linear-gradient( #0d1430, #245ca6 );
 }
 
 #root {
   overflow: hidden;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.hny {
+  font-size: larger;
+  padding-left: 20px;
+}
+
+.pad {
+  padding: 20px;
+}
+
+.point {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .pad {
+    padding: 40px;
+
+  }
 }
