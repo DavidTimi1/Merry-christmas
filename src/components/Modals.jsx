@@ -6,8 +6,9 @@ import { useEffect, useRef } from "react";
 
 
 
-export const ScrollModal = () => {
+export const ScrollModal = ({verse}) => {
     const ref = useRef(null);
+    const { txt, loc } = verse;
 
     useEffect(() => {
         ref.current.showModal();
