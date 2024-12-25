@@ -22,7 +22,7 @@ import day12Gift from '../assets/day12.png';
 import { GiftContext } from './context.jsx';
 import giftImg from "../assets/giftbox-close.png";
 import openedGift from "../assets/giftbox-open2.png";
-import { forwardRef, useEffect, useRef, useState } from 'react';
+import { forwardRef, useEffect, useRef, useState, useContext } from 'react';
 import Floor from './Floor';
 import SnowBox from './snowing/Snowing';
 import { ScrollModal } from './Modals';
@@ -189,7 +189,7 @@ const GiftBox = () => {
 }
 
 const GiftContent = forwardRef( ({gift}, ref) => {
-    const giftOverlayClose = useContext(GiftContext).close
+    const giftOverlayClose = useContext(GiftContext).hideGift
 
     return (
     <div className='abs-mid gift-cont' ref={ref} >
