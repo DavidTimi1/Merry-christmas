@@ -123,7 +123,7 @@ const GiftBox = () => {
             
                 <GiftContent ref={contentRef} isScrollOpen={openScroll} gift={daysPack.gift} />
 
-                { openScroll && <ScrollModal /> }
+                { openScroll && <ScrollModal verse={daysPack.verse} /> }
 
             <div className='sr-only hide'>
                     
