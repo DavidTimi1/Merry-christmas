@@ -121,7 +121,7 @@ const GiftBox = () => {
                 }
             </div>
             
-                <GiftContent ref={contentRef} gift={daysPack.gift} />
+                <GiftContent ref={contentRef} openScroll={openScroll}} gift={daysPack.gift} />
 
                 { openScroll && <ScrollModal /> }
 
@@ -139,6 +139,7 @@ const GiftBox = () => {
         if (opened){
             if (openScroll === undefined){
                 setOpenScroll(true)
+                setInfo('')
             }
 
         } else {
@@ -187,8 +188,10 @@ const GiftBox = () => {
     }
 }
 
-const GiftContent = forwardRef( ({gift}, ref) => (
+const GiftContent = forwardRef( ({gift}, ref) => {
+    const giftOverlayClose = useContext(GiftContext).close
 
+    return (
     <div className='abs-mid gift-cont' ref={ref} >
 
         {/* <div className='flex mid-align even-space'> */}
@@ -212,13 +215,19 @@ const GiftContent = forwardRef( ({gift}, ref) => (
             </div>
         {/* </div> */}
 
-        <div className='abs'>
-            <button>
+        <div className='abs' style={{bottom: "20%"}}>
+            <button onClick={handleClose}>
                 Close
             </button>
         </div>
     </div>
-))
+)
+
+function handleClose(e){
+    e.stopPropagation()
+    giftOverlayClose();
+}
+})
 
 export default Home
 
