@@ -19,6 +19,7 @@ import day10Gift from '../assets/day10.png';
 import day11Gift from '../assets/day11.png';
 import day12Gift from '../assets/day12.png';
 
+import { GiftContext } from './context.js';
 import giftImg from "../assets/giftbox-close.png";
 import openedGift from "../assets/giftbox-open2.png";
 import { forwardRef, useEffect, useRef, useState } from 'react';
@@ -45,9 +46,9 @@ const Home = () => {
                 <SnowBox />
             </div>
 
-            <GiftContent.Provider value={{hideGift: () => setShowGift(false)}}>
+            <GiftContext.Provider value={{hideGift: () => setShowGift(false)}}>
                 { showGift && <GiftBox /> }
-            </GiftContent.Provider>
+            </GiftContext.Provider>
         </div>
     )
 }
