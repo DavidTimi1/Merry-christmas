@@ -1,4 +1,4 @@
 import { createContext } from "react";
 
 
-export const giftContext = createContext(null);
+export const GiftContext = createContext(null);
