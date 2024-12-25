@@ -19,7 +19,7 @@ import day10Gift from '../assets/day10.png';
 import day11Gift from '../assets/day11.png';
 import day12Gift from '../assets/day12.png';
 
-import { GiftContext } from './context.js';
+import { GiftContext } from './context.jsx';
 import giftImg from "../assets/giftbox-close.png";
 import openedGift from "../assets/giftbox-open2.png";
 import { forwardRef, useEffect, useRef, useState } from 'react';
