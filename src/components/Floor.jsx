@@ -38,7 +38,6 @@ const Floor = () => {
             <div className="abs trees fw">
                 <div className='mx-auto' style={{width: "150px"}}>
                     <img src={snowMan} className='fw' style={{objectFit: "contain"}} />
-                    <Credit />
                 </div>
             </div>
         </div>
@@ -46,15 +45,4 @@ const Floor = () => {
 }
 
 
-const Credit = () => (
-    <footer className='mx-auto'>
-        <span>Created with </span> <span style={{ color: 'red' }}> ❤ </span> <span> 
-            by
-
-            <a href="https://github.com/DavidTimi1">
-                TimiDev
-            </a>
-        </span>
-    </footer>
-)
 export default Floor;
