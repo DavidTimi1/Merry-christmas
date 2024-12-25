@@ -121,7 +121,7 @@ const GiftBox = () => {
                 }
             </div>
             
-                <GiftContent ref={contentRef} openScroll={openScroll}} gift={daysPack.gift} />
+                <GiftContent ref={contentRef} isScrollOpen={openScroll} gift={daysPack.gift} />
 
                 { openScroll && <ScrollModal /> }
 
@@ -188,7 +188,7 @@ const GiftBox = () => {
     }
 }
 
-const GiftContent = forwardRef( ({gift}, ref) => {
+const GiftContent = forwardRef( ({gift, isScrollOpen}, ref) => {
     const giftOverlayClose = useContext(GiftContext).hideGift
 
     return (
@@ -214,12 +214,15 @@ const GiftContent = forwardRef( ({gift}, ref) => {
                 </div>
             </div>
         {/* </div> */}
+        {
+           isScrollOpen &&
 
         <div className='abs' style={{bottom: "20%"}}>
             <button onClick={handleClose}>
                 Close
             </button>
         </div>
+        }
     </div>
 )
 
