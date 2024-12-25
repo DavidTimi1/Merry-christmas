@@ -44,6 +44,10 @@ const Home = () => {
                 <Santa ref={santaRef} />
                 <Floor />
                 <SnowBox />
+                
+                <div className="abs fw" style={{bottom: 0, left: 0}}>
+                     <Credit />
+                </div>
             </div>
 
             <GiftContext.Provider value={{hideGift: () => setShowGift(false)}}>
@@ -52,6 +56,19 @@ const Home = () => {
         </div>
     )
 }
+
+
+const Credit = () => (
+    <footer className='mx-auto'>
+        <span>Created with </span> <span style={{ color: 'red' }}> ❤ </span> <span> 
+            by
+
+            <a href="https://github.com/DavidTimi1">
+                TimiDev
+            </a>
+        </span>
+    </footer>
+)
 
 
 const Santa = forwardRef((props,ref) => {
