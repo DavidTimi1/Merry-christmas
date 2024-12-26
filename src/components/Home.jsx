@@ -273,7 +273,7 @@ const daysOfChristmas = [
             src: day2Gift
         },
         verse: {
-            txt: "For a child will be born for us, a son will be given to us, and the government will be on His shoulders. ",
+            txt: "For a child will be born for us, a son will be given to us, and the government will be on His shoulders. He will be named Wonderful Counselor, Mighty God, Eternal Father, Prince of Peace. The dominion will be vast, and its prosperity will never end.",
             loc: "Isaiah 9:6"
         }
     },
