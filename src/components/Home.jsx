@@ -2,7 +2,6 @@ import './Home.css';
 import './gift.css';
 import '../css packages/animate.css';
 
-import santaVid from "../assets/santa.mp4";
 import santaGIF from "../assets/santa1.gif";
 import scrollImg from '../assets/scroll-folded.png';
 
@@ -59,14 +58,11 @@ const Home = () => {
 
 
 const Credit = () => (
-    <footer className='mx-auto'>
-        <span>Created with </span> <span style={{ color: 'red' }}> ❤ </span> <span> 
-            by
+    <footer className='center-text'>
+        <span>Created with </span> <span style={{ color: 'red' }}> ❤ </span>
+        <span> by </span>
 
-            <a href="https://github.com/DavidTimi1">
-                TimiDev
-            </a>
-        </span>
+        <a href="https://github.com/DavidTimi1" target='_blank' style={{fontSize: "larger"}}> TimiDev </a>
     </footer>
 )
 
