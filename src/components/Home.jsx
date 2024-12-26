@@ -273,8 +273,8 @@ const daysOfChristmas = [
             src: day2Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "For a child will be born for us, a son will be given to us, and the government will be on His shoulders. ",
+            loc: "Isaiah 9:6"
         }
     },
     {
@@ -283,8 +283,8 @@ const daysOfChristmas = [
             src: day3Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "Bethlehem Ephrathah, you are small among the clans of Judah; One will come from you to be ruler over Israel for Me. His origin is from antiquity, from eternity.",
+            loc: "Micah 5:2"
         }
     },
     {
