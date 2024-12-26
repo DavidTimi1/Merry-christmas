@@ -3,7 +3,7 @@
 A simple Christmas greetings webpage that offers a special gift for each of the 12 days of Christmas. Celebrate the festive season with daily surprises and spread holiday cheer!
 
 ## View Live Page
-[Link to page](https://merry-christmas-phi.vercel.com)
+[Link to page](https://merry-christmas-phi.vercel.app)
 
 ## Description
 
