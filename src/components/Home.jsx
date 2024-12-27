@@ -252,15 +252,14 @@ export default Home
 
 
 const daysOfChristmas = [
-
     {
         gift: {
-            descr: <>A partridge <br></br> in a Pear Tree</>,
+            descr: <>A Partridge <br></br> in a Pear Tree</>,
             src: day1Gift
         },
         verse: {
-            txt: "Therefore the Lord Himself will give you a sign: Behold, the virgin shall conceive and bear a Son, and shall call His name Immanuel..",
-            loc: "Isaiah 7 : 14"
+            txt: "Therefore the Lord Himself will give you a sign: Behold, the virgin shall conceive and bear a Son, and shall call His name Immanuel.",
+            loc: "Isaiah 7:14"
         }
     },
     {
@@ -270,12 +269,12 @@ const daysOfChristmas = [
         },
         verse: {
             txt: "For a child will be born for us, a son will be given to us, and the government will be on His shoulders. He will be named Wonderful Counselor, Mighty God, Eternal Father, Prince of Peace. The dominion will be vast, and its prosperity will never end.",
-            loc: "Isaiah 9:6"
+            loc: "Isaiah 9:6-7"
         }
     },
     {
         gift: {
-            descr: <>3 French Hens </>,
+            descr: <>3 French Hens</>,
             src: day3Gift
         },
         verse: {
@@ -289,8 +288,8 @@ const daysOfChristmas = [
             src: day4Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "The Word became flesh and dwelt among us. We observed His glory, the glory as the One and Only Son from the Father, full of grace and truth.",
+            loc: "John 1:14"
         }
     },
     {
@@ -299,8 +298,8 @@ const daysOfChristmas = [
             src: day5Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "But you, Bethlehem, in the land of Judah, are by no means least among the rulers of Judah: because out of you will come a ruler who will shepherd My people Israel.",
+            loc: "Matthew 2:6"
         }
     },
     {
@@ -309,68 +308,68 @@ const daysOfChristmas = [
             src: day6Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "She will give birth to a son, and you are to name Him Jesus, because He will save His people from their sins.",
+            loc: "Matthew 1:21"
         }
     },
     {
         gift: {
-            descr: <>A partridge <br></br> in a Pear Tree</>,
+            descr: <>7 Swans a-Swimming</>,
             src: day7Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "Suddenly there was a multitude of the heavenly host with the angel, praising God and saying: 'Glory to God in the highest heaven, and peace on earth to people He favors!'",
+            loc: "Luke 2:13-14"
         }
     },
     {
         gift: {
-            descr: <>A partridge <br></br> in a Pear Tree</>,
+            descr: <>8 Maids a-Milking</>,
             src: day8Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "For today in the city of David a Savior was born for you, who is the Messiah, the Lord. This will be the sign for you: You will find a baby wrapped tightly in cloth and lying in a manger.",
+            loc: "Luke 2:11-12"
         }
     },
     {
         gift: {
-            descr: <>A partridge <br></br> in a Pear Tree</>,
+            descr: <>9 Ladies Dancing</>,
             src: day9Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "And Mary said: My soul magnifies the Lord, and my spirit rejoices in God my Savior, because He has looked with favor on the humble condition of His servant.",
+            loc: "Luke 1:46-48"
         }
     },
     {
         gift: {
-            descr: <>A partridge <br></br> in a Pear Tree</>,
+            descr: <>10 Lords a-Leaping</>,
             src: day10Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "Rejoice greatly, Daughter Zion! Shout in triumph, Daughter Jerusalem! Look, your King is coming to you; He is righteous and victorious, humble and riding on a donkey, on a colt, the foal of a donkey.",
+            loc: "Zechariah 9:9"
         }
     },
     {
         gift: {
-            descr: <>A partridge <br></br> in a Pear Tree</>,
+            descr: <>11 Pipers Piping</>,
             src: day11Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "When they saw the star, they were overwhelmed with joy. Entering the house, they saw the child with Mary His mother, and falling to their knees, they worshiped Him. Then they opened their treasures and presented Him with gifts: gold, frankincense, and myrrh.",
+            loc: "Matthew 2:10-11"
         }
     },
     {
         gift: {
-            descr: <>A partridge <br></br> in a Pear Tree</>,
+            descr: <>12 Drummers Drumming</>,
             src: day12Gift
         },
         verse: {
-            txt: "In everthing, give thanks for this is the Will of God in Christ Jesus for you.",
-            loc: "1 Thessalonians 5 : 18"
+            txt: "For God so loved the world that He gave His one and only Son, that whoever believes in Him shall not perish but have eternal life.",
+            loc: "John 3:16"
         }
-    },
+    }
 ]
