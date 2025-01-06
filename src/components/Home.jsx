@@ -25,13 +25,12 @@ import { forwardRef, useEffect, useRef, useState, useContext } from 'react';
 import Floor from './Floor';
 import SnowBox from './snowing/Snowing';
 import { ScrollModal } from './Modals';
-
-import { christmasDay } from '../App';
-
+import { ChristmasDayContext } from '../contexts.js';
 
 const Home = () => {
     const santaRef = useRef(null);
     const [showGift, setShowGift] = useState(true);
+    const christmasDay = useContext(ChristmasDayContext).value;
 
     useEffect(() => {
 
@@ -43,15 +42,21 @@ const Home = () => {
                 <Santa ref={santaRef} />
                 <Floor />
                 <SnowBox />
-                
+
+                <NotChristmas />
+
                 <div className="abs fw" style={{bottom: 0, left: 0}}>
-                     <Credit />
+                    <Credit />
                 </div>
             </div>
 
-            <GiftContext.Provider value={{hideGift: () => setShowGift(false)}}>
-                { showGift && <GiftBox /> }
-            </GiftContext.Provider>
+            {
+                christmasDay !== false &&
+
+                <GiftContext.Provider value={{hideGift: () => setShowGift(false)}}>
+                    { showGift && <GiftBox /> }
+                </GiftContext.Provider>
+            }
         </div>
     )
 }
@@ -68,8 +73,11 @@ const Credit = () => (
 
 
 const Santa = forwardRef((props,ref) => {
+    const isChristmas = useContext(ChristmasDayContext).value;
 
     return (
+        isChristmas !== false &&
+
         <div className='fw pad'>
             <h1>
                 Merry Christmas
@@ -80,6 +88,7 @@ const Santa = forwardRef((props,ref) => {
             <div className="abs-top santa" style={{width: "min(480px, 90%)"}}>
                 <img ref={ref} className="fw" src={santaGIF} alt="" style={{objectFit: "cover"}} />
             </div>
+
         </div>
     )
 })
@@ -89,6 +98,7 @@ const GiftBox = () => {
     const [opened, setOpened] = useState(false);
     const [info, setInfo] = useState("");
     const [openScroll, setOpenScroll] = useState(false);
+    const christmasDay = useContext(ChristmasDayContext).value;
     
     const daysPack = daysOfChristmas[christmasDay];
 
@@ -244,6 +254,25 @@ function handleClose(e){
     giftOverlayClose();
 }
 })
+
+const NotChristmas = () => {
+    const cd = useContext(ChristmasDayContext), isChristmas = cd.value, ignoreDate = cd.ignore;
+    
+    return (
+        isChristmas === false &&
+
+        <div className='abs-mid flex-col mid-align center-text gap-5'>
+            <h1> 404 </h1>
+            <p>
+                Santa not found 🎅 <br></br>
+                It's no longer christmas 😢
+            </p>
+            <button onClick={ignoreDate}>
+                Pretend it Is ! 😂
+            </button>
+        </div>
+    )
+}
 
 export default Home
 

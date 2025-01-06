@@ -1,37 +1,43 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Title and Description for SEO -->
     <title>12 Days of Christmas | Merry Christmas Wishes & Daily Gifts</title>
 
-    <meta name="description" content="Celebrate the 12 Days of Christmas with us! Unlock surprise presents every day and spread festive cheer with merry wishes.">
+    <meta name="description"
+        content="Celebrate the 12 Days of Christmas with us! Unlock surprise presents every day and spread festive cheer with merry wishes.">
 
     <!-- Keywords for SEO -->
-    <meta name="keywords" content="Christmas, 12 days of Christmas, Merry Christmas wishes, daily presents, holiday gifts, festive surprises, santa">
-    
+    <meta name="keywords"
+        content="Christmas, 12 days of Christmas, Merry Christmas wishes, daily presents, holiday gifts, festive surprises, santa">
+
     <!-- Author -->
     <meta name="author" content="Timidev">
-    
+
     <!-- Theme Color for Mobile Browsers -->
     <meta name="theme-color" content="#0d1430">
 
     <link rel="icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <link rel="preload" href="/src/assets/santa1.gif" as="image">
     <link rel="preload" href="/src/assets/giftbox-close.png" as="image">
     <link rel="preload" href="/src/assets/christmas-tree-less.png" as="image">
     <link rel="preload" href="/src/assets/snowman.png" as="image">
-    
+
 
     <meta property="og:title" content="12 Days of Christmas | Merry Christmas Wishes & Daily Gifts">
     <meta property="og:description" content="Unlock a special gift every day for the 12 Days of Christmas and spread festive joy!">
     <meta property="og:image" content="/summary-pic.jpg">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="293">
     <meta property="og:url" content="https://merry-christmas-phi.vercel.app">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="12 Days of Christmas">
@@ -40,88 +46,96 @@
     <meta name="twitter:title" content="12 Days of Christmas | Merry Christmas Wishes & Daily Gifts">
     <meta name="twitter:description" content="Celebrate the season with daily surprises for the 12 Days of Christmas!">
     <meta name="twitter:image" content="/summary-pic.jpg">
+    <meta name="twitter:image:width" content="512">
+    <meta name="twitter:image:height" content="293">
     <meta name="twitter:url" content="https://merry-christmas-phi.vercel.app">
     <meta name="twitter:site" content="@DavidTimi_1">
     <meta name="twitter:creator" content="@DavidTimi_1">
 
 
-    <style> 
-      #loading-screen {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #123a84;
-        transition: .5s;
-        height: 100%;
-        opacity: 1;
-        align-items: center;
-        justify-content: center;
-        z-index: 1000;
-        visibility: visible;
+    <style>
+        #loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #123a84;
+            transition: .5s;
+            height: 100%;
+            opacity: 1;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            visibility: visible;
 
-        &.close {
-          opacity: 0;
-          visibility: hidden;
-          z-index: -1000;
+            &.close {
+                opacity: 0;
+                visibility: hidden;
+                z-index: -1000;
+            }
+
+            >* {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: min(80%, 200px);
+            }
+
+            > ::before {
+                content: '';
+                position: absolute;
+                bottom: 5px;
+                width: 50px;
+                height: 7px;
+                background-color: #22222290;
+                border-radius: 5em;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
-        > * {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          width: min(80%, 200px);
+        #loading-screen img {
+            width: 100%;
+            animation: snowman-anime 1s infinite alternate-reverse;
         }
-        
-         > ::before {
-          content: '';
-          position: absolute;
-          bottom: 5px;
-          width: 50px;
-          height: 7px;
-          background-color: #22222290;
-          border-radius: 5em;
-          left: 50%;
-          transform: translateX(-50%);
+
+        @keyframes snowman-anime {
+            from {
+                transform: translateY(10px);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
         }
-      }
-
-      #loading-screen img {
-        width: 100%;
-        animation: snowman-anime 1s infinite alternate-reverse;
-      }
-
-      @keyframes snowman-anime {
-        from {transform: translateY(10px);}
-        to {transform: translateY(-10px);}
-      }
-
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="loading-screen" class="">
-      <div class="abs-mid">
-        <img src="/src/assets/snowman.png" alt="Loading...">
-      </div>
+        <div class="abs-mid">
+            <img src="/src/assets/snowman.png" alt="Loading...">
+        </div>
     </div>
     <div id="content" class="max" style="visibility: hidden;">
-      <!-- Your main website content here -->
-      <div class="max" id="root">
-      </div>
+        <!-- Your main website content here -->
+        <div class="max" id="root">
+        </div>
     </div>
-    
+
     <script type="module" src="/src/main.jsx"></script>
-    
+
     <script>
-    
-      window.addEventListener("load", () => {
-        // Hide the loading screen and show the content when the page loads
-        document.getElementById("loading-screen").classList.add("close");
-        document.getElementById("content").style.visibility = "visible";
-      });
-    
+
+        window.addEventListener("load", () => {
+            // Hide the loading screen and show the content when the page loads
+            document.getElementById("loading-screen").classList.add("close");
+            document.getElementById("content").style.visibility = "visible";
+        });
+
     </script>
 
-  </body>
+</body>
+
 </html>
