@@ -15,6 +15,48 @@
     background-color: #222222bb;
 }
 
+
+.github-corner {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover .octo-arm {
+        -webkit-animation: octocat-wave .56s ease-in-out;
+        animation: octocat-wave .56s ease-in-out;
+    }
+
+}
+
+@keyframes github-bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes octocat-wave {
+    0%, 100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    20%, 60% {
+        -webkit-transform: rotate(-25deg);
+        transform: rotate(-25deg);
+    }
+    40%, 80% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+}
+
 footer {
     color: #222;
     bottom: 10px;
