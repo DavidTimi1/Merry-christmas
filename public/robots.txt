@@ -1,4 +1,3 @@
 User-agent: *
-Disallow:
-
-Sitemap: /sitemap.xml
+Disallow: 
+Sitemap: https://merry-christmas-phi.vercel.app/sitemap.xml
