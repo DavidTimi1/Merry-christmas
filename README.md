@@ -53,6 +53,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Special thanks to the contributors and maintainers of this project.
 - Icons and images used in the project are sourced from various free resources.
 
----
-
-Feel free to customize and expand upon this template to better suit your project's needs!
